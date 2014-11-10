@@ -35,35 +35,64 @@ How do we know if these are files or directories?
 
 `ls -F`
 
-Can we move to one of those directories?
-
-`cd`
-
-Can we move upwards in the hierarchy, like to move back to the first directory?
-
-`cd ..`
-
 Can we make a directory?
 
 `mkdir testFolder`
 
 *How do we test to see if the folder was created?*
 
-Can we remove a directory?
+Can we move into this directory?
 
-`rmdir testfolder` 
+`cd testFolder`
 
-Can we copy files?
+Tab completion is a shortcut for long filenames.
 
-`cp ReleaseNotes.rtf`
+Can we move upwards in the hierarchy, like to move back to the first directory?
 
-Can we move files around?
+`cd ..`
 
-`mv ReleaseNotes.rtf test.rtf`
+Can we make a file? This command isn't particularly useful because the file is empty.
+
+`touch test.txt`
+
+*Now make another file in `testFolder`*
+
+```
+cd testFolder
+touch test2.txt
+```
+
+OR `cd ..` back up, and from original directory:
+
+`touch testFolder/test2.txt`
+
+*Are there two files called test2.txt? Were you warned that you were overwriting? Be careful or use `-i`*
+
+Can we copy files? 
+
+`cp test.txt test3.txt`
+
+Can we move files around? This can be used to rename files AND move from one folder to another.
+
+```
+mv test.txt test4.txt
+mv test4.txt testFolder/test5.txt
+```
 
 Can we remove files?
 
-`rm test.rtf`
+`rm test3.txt`
+
+Can we remove a directory?
+
+`rmdir testfolder`
+
+How do we remove a folder with files in it? We can't remove a folder unless it's empty. There are a few ways.
+
+```
+rm testFolder/*
+rmdir testFolder
+```
 
 ##Navigation and file management summary, shortcut slide (5 minutes)
 
@@ -104,16 +133,3 @@ Who wrote all of these poems?
 `grep -r "Author" .`
 
 ##Other commands, software, and resources slides from powerpoint (10 minutes)
-
-##If extra time:
-
-How do we remove a file?
-
-`rm fileToBeDeleted`
-
-How do we remove a folder with files in it?
-
-```
-rm folderToBeDeleted/*
-rmdir folderToBeDeleted
-```
