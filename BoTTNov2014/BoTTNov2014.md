@@ -7,7 +7,7 @@ Biologists of Tyler, Texas
 
 Dr. Kate Hertweck
 
-Slides available [here](https://github.com/k8hertweck/UTTylerWorkshops/BoTTNov2014/BoTTNov2014.pdf)
+Slides available [here](https://github.com/k8hertweck/UTTylerWorkshops/blob/master/BoTTNov2014/introToUnixFall2014.pdf)
 
 *Notes in italics are quick tests of material from earlier in the lesson*
 
