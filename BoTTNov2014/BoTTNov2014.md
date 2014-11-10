@@ -61,6 +61,10 @@ Can we move files around?
 
 `mv ReleaseNotes.rtf test.rtf`
 
+Can we remove files?
+
+`rm test.rtf`
+
 ##Navigation and file management summary, shortcut slide (5 minutes)
 
 ##Practicing skills (5 minutes)
